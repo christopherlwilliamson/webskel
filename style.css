@@ -5,6 +5,105 @@ body {
     flex-direction: column;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.openBtn {
+    display: flex;
+    justify-content: left;
+}
+
+.openButton:hover {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+.openButton {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.loginPopup {
+    display:flex;
+    justify-content: center;
+}
+
+.formPopup {
+    border-radius: 30px;
+    display: none;
+    position: fixed;
+    border: 3px solid #999999;
+    z-index: 9;
+}
+
+
+.input {
+    border-radius: 30px;
+}
+
+textarea {
+    width: 300px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.formContainer {
+    border-radius: 30px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    max-width: 700px;
+    padding: 40px;
+    background-color: rgba(1, 1, 1, 0.9);
+    color: white;
+}
+
+.formContainer input[type=text],
+.formContainer input[type=password] {
+    width: 300px;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+}
+
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus {
+    background-color: #ddd;
+        outline: none;
+}
+
+
+.formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  .formContainer .cancel {
+    background-color: #cc0000;
+  }
+  .formContainer .btn:hover,
+  .openButton:hover {
+    opacity: 1;
+  }
+
+  .btn {
+      border-radius: 30px;
+  }
+
 .header {
   display: flex;
   justify-content: space-between;
